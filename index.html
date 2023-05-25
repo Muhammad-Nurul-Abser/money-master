@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wage Enumeration</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" />
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+
+    <section class="section">
+        <!-- header -->
+        <h3 style="padding: 2rem;" class="text-center text-4xl font-bold">Wage Enumeration <i
+                class="fa-solid fa-sack-dollar" style="color: chocolate;"></i></h3>
+
+        <!-- main div -->
+        <div class="flex flex-wrap">
+
+            <!-- image -->
+            <div class="money-img-div flex-auto w-60">
+                <img class="image" src="money1.jpg" alt="">
+            </div>
+
+            <!-- calculation div -->
+            <div class="money-calculation flex-auto w-32">
+
+                <!-- income header -->
+                <h5 style="padding-top: 100px;" class="text-center text-lg font-medium text-slate-950">Income</h5>
+
+                <!-- income input -->
+                <div class="flex income">
+                    <h6 style="margin-top: 20px;">income:</h6>
+                    <input style="margin-top: 20px;" id="income-field" type="" value="0" min="0" max="100000">
+                </div>
+
+                <!-- expense heafer -->
+                <h5 style="padding-top: 35px;" class="text-center text-lg font-medium text-slate-950">Expenses</h5>
+
+                <!-- expense div -->
+                <div class="expenses">
+
+                    <!-- food input -->
+                    <div class="flex food">
+                        <h6>Food:</h6>
+                        <input class="expense-input" id="food-field" type="" value="0" min="0" max="100000">
+                    </div>
+
+                    <!-- rent input -->
+                    <div class="flex rent">
+                        <h6>Rent:</h6>
+                        <input class="expense-input" id="rent-field" type="" value="0" min="0" max="100000">
+                    </div>
+
+                    <!-- clothes iput -->
+                    <div class="flex clothes">
+                        <h6>Clothes:</h6>
+                        <input class="expense-input" id="clothes-field" type="" value="0" min="0" max="100000">
+                    </div>
+
+                    <!-- calcution button -->
+                    <button class="calculate-btn py-1" id="calculate-btn">Calculate</button>
+
+                    <!-- total expense & balance -->
+                    <div>
+                        <h5 class=" text-lg font-medium text-slate-950 ">Total Expense: <span id="Expense">0</span></h5>
+                        <h5 style="margin-top: 5px;" class=" text-lg font-medium text-slate-950">Balance:
+                            <span id="balance">0</span>
+                        </h5>
+                    </div>
+
+                </div>
+
+                <!-- save section input & button -->
+                <div class="flex save">
+                    <h6>Save:</h6>
+                    <input class="save-input" id="saveMoney-field" type="number" value="0" min="0" max="100"
+                        placeholder="0%">
+                    <h6 class="percentage"><span>%</span></h6>
+                    <button class="save-btn" id="saveBtn">Save</button>
+                </div>
+
+                <!-- saving amount & remaining balance -->
+                <div class="final-amount mt-5">
+                    <h5 style="margin-top: 10px;" class=" text-lg font-medium text-slate-950">Saving Amount:
+                        <span id="saving-amount">0</span>
+                    </h5>
+
+                    <h5 style="margin-top: 5px;" class="text-lg font-medium text-slate-950">Remaining
+                        Balance:
+                        <span id="remaining-Balance">0</span>
+                    </h5>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- alert -->
+        <h3 class="limit-Alert" id="first-Alert"> "Income money is less than EXPENSES money" <br> "Please increase it".
+        </h3>
+        <h3 class="success-Alert" id="success-Alert">"Nice work"</h3>
+        <h3 class="third-Alert" id="third-Alert">"Please insert input number" <br> "String will not work"</h3>
+        
+    </section>
+    <!-- javascript -->
+    <script src="main.js"></script>
+</body>
+
+</html>

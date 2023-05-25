@@ -1,0 +1,183 @@
+.section {
+    margin: 2rem 5rem 2rem 5rem;
+    background-color: rgb(237, 238, 240);
+}
+
+.money-img-div {
+    margin: 0.5rem 0rem 3rem 5rem;
+    width: 20rem;
+    height: 50rem;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.money-calculation {
+    margin: 0.5rem 5rem 3rem 3.5rem;
+    width: 10rem;
+    height: 50rem;
+    background-color: rgb(217, 217, 218);
+}
+
+.income {
+    width: 41%;
+    margin: auto;
+}
+
+/*  input field inner scroll-bar hidding*/
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+
+/* income input field */
+#income-field {
+    margin-left: 25px;
+    width: 128px;
+    padding-left: 4px;
+}
+
+#income-field:focus {
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+/* food input field */
+#food-field {
+    margin-left: 41px;
+    width: 128px;
+    padding-left: 4px;
+}
+
+#food-field:focus {
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+/* rent input field */
+#rent-field {
+    margin-left: 45px;
+    width: 128px;
+    padding-left: 4px;
+}
+
+#rent-field:focus {
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+/* clothes input field */
+#clothes-field {
+    margin-left: 24px;
+    width: 128px;
+    padding-left: 4px;
+}
+
+#clothes-field:focus {
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+
+/* expense */
+.expenses {
+    width: 41%;
+    margin: auto;
+}
+
+.food,
+.rent,
+.clothes {
+    margin-top: 20px;
+}
+
+/* calculation button */
+.calculate-btn {
+    margin: 20px auto;
+    width: 100%;
+    border: none;
+    font-weight: 500;
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+.calculate-btn:hover {
+    color: white;
+    background-color: rgb(5, 143, 5);
+    transition: all 0.3s ease-in-out;
+}
+
+
+
+
+/*  save money */
+.save {
+    width: 50%;
+    margin: 2.5rem auto 0 auto;
+}
+
+.save-input {
+    width: 70px;
+    margin: 0 1rem;
+    padding-left: 4px;
+}
+
+.percentage {
+    margin: 0 1rem 0 0;
+}
+/* save button */
+.save-btn {
+    background-color: tomato;
+    width: 73px;
+    border: none;
+    font-weight: 500;
+    background-color: tomato;
+    border-radius: 5px;
+}
+
+.save-btn:hover {
+    color: white;
+    background-color: rgb(5, 143, 5);
+    transition: all 0.3s ease-in-out;
+}
+
+.save-input:focus {
+    outline: none;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+}
+
+.final-amount{
+    width: 18rem;
+    margin-left: 9rem;
+}
+
+
+/* 1st alert */
+.limit-Alert{
+    color: red;
+    font-weight: 600;
+    position: absolute;
+    top: 200px;
+    left: 929px;
+    text-decoration: underline;
+}
+/* second alert */
+.success-Alert{
+    color: rgb(0, 126, 42);
+    font-weight: 600;
+    position: absolute;
+    top: 200px;
+    left: 1038px;
+    text-decoration: underline;
+}
+/* third alert */
+.third-Alert{
+    color: rgb(250, 42, 42);
+    font-weight: 600;
+    position: absolute;
+    top: 182px;
+    left: 997px;
+    text-decoration: underline;
+}
